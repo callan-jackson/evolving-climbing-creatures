@@ -27,14 +27,14 @@ import argparse
 # Try to import matplotlib, provide instructions if not available
 try:
     import matplotlib.pyplot as plt
-    import matplotlib.patches as mpatches
+    import matplotlib.patches as mpatches  # noqa: F401  (availability check)
     MATPLOTLIB_AVAILABLE = True
 except ImportError:
     MATPLOTLIB_AVAILABLE = False
     print("WARNING: matplotlib not installed. Install with: pip install matplotlib")
 
 try:
-    import numpy as np
+    import numpy as np  # noqa: F401  (availability check)
     NUMPY_AVAILABLE = True
 except ImportError:
     NUMPY_AVAILABLE = False
