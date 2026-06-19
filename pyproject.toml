@@ -1,0 +1,14 @@
+[tool.ruff]
+line-length = 100
+exclude = [".venv", "venv", "results", "shapes"]
+
+[tool.ruff.lint]
+# This is research / simulation code. A few idioms common to experiment
+# scripts are intentionally allowed rather than rewritten:
+ignore = [
+    "E402",  # imports after pybullet setup / sys.path tweaks
+    "E711",  # `== None` comparisons in numeric/physics checks
+    "E722",  # bare `except` around non-deterministic physics calls
+    "E741",  # short maths variable names (l, I) in formulas
+    "F841",  # variables kept for readability in experiment loops
+]

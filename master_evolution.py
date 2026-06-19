@@ -130,7 +130,7 @@ def run_evolution(
             pop.creatures = new_creatures
 
     print("-" * 60)
-    print(f"Evolution complete!")
+    print("Evolution complete!")
     print(f"All-time best fitness: {all_time_best_fitness:.3f}")
     print(f"Best DNA saved to: {os.path.join(output_dir, 'best_ever.csv')}")
 

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Convert HTML files to Word documents."""
 
-import re
 import os
 from bs4 import BeautifulSoup
 from docx import Document

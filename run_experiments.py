@@ -26,8 +26,7 @@ import population
 import genome
 import creature
 from genome_experiments import (
-    SnakeGenome, HeavyGenome, ControlOnlyGenome, LeggedGenome,
-    get_genome_class
+    SnakeGenome, HeavyGenome, ControlOnlyGenome, LeggedGenome
 )
 from mountain_simulation import MountainThreadedSim, SensorMountainThreadedSim
 

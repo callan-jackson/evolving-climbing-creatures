@@ -23,7 +23,6 @@ import csv
 import json
 import gc
 import numpy as np
-from datetime import datetime
 
 import population
 import genome

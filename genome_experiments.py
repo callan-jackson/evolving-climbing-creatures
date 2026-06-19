@@ -17,7 +17,7 @@ Experiment B: Control-Only Evolution
 import numpy as np
 import copy
 import random
-from genome import Genome, URDFLink
+from genome import Genome
 
 
 class SnakeGenome(Genome):

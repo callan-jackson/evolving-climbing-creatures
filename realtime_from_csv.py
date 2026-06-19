@@ -4,7 +4,6 @@ import sys
 import creature
 import pybullet as p
 import time 
-import random
 import numpy as np
 
 ## ... usual starter code to create a sim and floor

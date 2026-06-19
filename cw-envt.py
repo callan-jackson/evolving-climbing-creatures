@@ -1,14 +1,11 @@
 import pybullet as p
 import pybullet_data
-import time
-import numpy as np
 import random
 import creature
 
 p.connect(p.GUI)
 p.setAdditionalSearchPath(pybullet_data.getDataPath())
 
-import random
 import pybullet as p
 import math
 

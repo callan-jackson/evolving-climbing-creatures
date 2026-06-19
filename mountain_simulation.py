@@ -227,7 +227,7 @@ def _run_creature_worker(args):
     try:
         sim = MountainSimulation(unique_id, landscape=landscape)
         sim.run_creature(cr, iterations)
-    except Exception as e:
+    except Exception:
         # If simulation fails, assign zero fitness
         cr.fitness = 0
     finally:
@@ -288,7 +288,7 @@ class MountainThreadedSim:
                         cr = batch_args[i][1]  # Get original creature
                         cr.fitness = 0
                         new_creatures.append(cr)
-                    except Exception as e:
+                    except Exception:
                         # Other error - assign zero fitness
                         cr = batch_args[i][1]
                         cr.fitness = 0
@@ -490,7 +490,7 @@ def _run_sensor_creature_worker(args):
     try:
         sim = SensorMountainSimulation(unique_id, landscape=landscape)
         sim.run_creature(cr, iterations)
-    except Exception as e:
+    except Exception:
         # If simulation fails, assign zero fitness
         cr.fitness = 0
     finally:
@@ -550,7 +550,7 @@ class SensorMountainThreadedSim:
                         cr = batch_args[i][1]
                         cr.fitness = 0
                         new_creatures.append(cr)
-                    except Exception as e:
+                    except Exception:
                         # Other error - assign zero fitness
                         cr = batch_args[i][1]
                         cr.fitness = 0
